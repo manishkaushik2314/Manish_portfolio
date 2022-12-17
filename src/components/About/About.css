@@ -1,0 +1,146 @@
+.about_container{
+    
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    margin-top: 210px;
+  
+   
+}
+
+h3
+{
+    color: var(--color-primary);
+}
+.about_heading{
+    position: relative;
+    left: 620px;
+    top:110px;
+    letter-spacing: 3px;
+    
+}
+.about__me{
+width: 60%;
+aspect-ratio: 1/1;
+   
+    border-radius: 2rem;
+    background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+    display: grid;
+    place-items: center;
+    position: relative;
+    right: 50px;
+}
+
+
+.about__me-image{
+   width: 78%;
+   height: 60%;
+ 
+   border-radius:2rem ;
+ overflow: visible;
+ transform: rotate(10deg);   
+ transition: var(--transition);
+ position: relative;
+ top: 50px;
+
+
+}
+.about__me-image:hover{
+transform: rotate(0deg);    
+
+}
+.about__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:  1.5rem;
+
+}
+.about_card{
+    background: var(--color-bg-variant);
+    border:1px solid transparent;
+    border-radius:1rem;
+    padding: 2rem;
+    text-align: center;
+   
+    transition: var(--transition);
+}
+.about_card:hover{
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+.about_card h5{
+    font-size: 0.95rem;
+
+}
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+.about_container p{
+    margin: 2rem 0 2.6rem 0;
+}
+/*--------------------MEDIA QUERIES--FOR MEDIUM DEVICES------------------------*/
+@media screen and (max-width:1024px){
+   .about_container{
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-left: 8rem;
+
+   }
+   .about__me{
+    width: 50%;
+    margin: 2rem auto 5rem;
+   }
+   .about__content p{
+    margin: 1rem 0.15rem;
+
+   }
+   .about_heading{
+    position: relative;
+    left: 340px;
+   }
+   .about_container{
+    margin-left: 1rem;
+   }
+
+}
+
+
+/*--------------------MEDIA QUERIES--FOR SMALL DEVICES------------------------*/
+@media screen and (max-width:600px){
+    .about_container{
+        position: relative;
+        bottom: 200px;
+
+    }
+.about__me{
+    width: 65%;
+    position: relative;
+    right: -7px;
+   
+
+}
+.about__cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.about__content{
+    text-align: center;
+}
+.about__content p{
+    margin: 1.5rem 0;
+
+}
+.about_heading{
+    position: relative;
+    left: 112px;
+    top: -0px;
+   }
+   .about__me-image{
+    width: 70%;
+    aspect-ratio: 1/1;
+    
+   }
+
+}

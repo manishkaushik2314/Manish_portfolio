@@ -1,0 +1,89 @@
+
+.experience_frontend{
+
+    background-color: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    height: 530px;
+    width: 350px;
+    position: relative;
+    left: -23px;
+
+}
+.backend{
+    display: flex;
+    position: relative;
+    left: 650px;
+    bottom: 447px;
+    background-color: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    height: 530px;
+    width: 350px;
+    border-radius: 2rem;
+
+    
+}
+.backend h2{
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 18px;
+}
+.experience_frontend h2{
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 18px;
+}
+section h5{
+    color: var(--color-primary);
+}
+section h2{
+    color: aliceblue;
+}
+section h3{
+    color: aliceblue;
+}
+
+
+/*--------------------MEDIA QUERIES--FOR MEDIUM DEVICES------------------------*/
+
+@media screen and (max-width:1024px){
+   
+        #Experience{
+            margin-top: 50px;
+            align-items: center;
+        }
+      
+        .backend{
+            /* display: inline-block; */
+            position: relative;
+            top: 500px;
+            left: -80px;
+            
+        }
+    }
+
+
+
+
+/*--------------------MEDIA QUERIES--FOR SMALL DEVICES------------------------*/
+@media screen and (max-width:600px){
+    #Experience{
+        position: relative;
+        top: 200px;
+    }
+    .experience_container{
+      position: absolute;
+      right:280px;
+   
+        width: 55%;
+    }
+    .experience_frontend{
+        display: flexbox;
+        position: relative;
+        left: 110px;
+    }
+   .backend{
+    position: relative;
+    top: 150px;
+   }
+}
